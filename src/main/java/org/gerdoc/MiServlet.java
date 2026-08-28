@@ -24,6 +24,7 @@ public class MiServlet extends HttpServlet
         out.println("<html>");
         out.println("<body>");
         out.println("<h1>Hola desde Servlet</h1>");
+        out.println("<h1>Marco Antonio</h1>");
         out.println("<p>Tomcat 9 + IntelliJ + Maven</p>");
         out.println("</body>");
         out.println("</html>");
