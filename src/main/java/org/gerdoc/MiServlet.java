@@ -1,0 +1,45 @@
+package org.gerdoc;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.io.Serial;
+
+@WebServlet("/MiServlet")
+public class MiServlet extends HttpServlet
+{
+    @Serial
+    private static final long serialVersionUID = 1L;
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        resp.setContentType("text/html;charset=UTF-8");
+
+        PrintWriter out = resp.getWriter();
+
+        out.println("<html>");
+        out.println("<body>");
+        out.println("<html>");
+        out.println("<body>");
+        out.println("<h1>Hola desde Servlet</h1>");
+        out.println("<h1>Nombre</h1>");
+        out.println("<h2>Marco Antonio</h2>");
+        out.println("<h1>Edad</h1>");
+        out.println("<h2>16</h2>");
+        out.println("<h1>Materia</h1>");
+        out.println("<h2>Programacion web</h2>");
+        out.println("<h1>Hobby</h1>");
+        out.println("<h2>Programar cosas complicadas, leer, ver anime, idear cosas</h2>");
+        out.println("<h1>Grupo</h1>");
+        out.println("<h2>5IM9</h2>");
+        out.println("<p>Tomcat 9 + IntelliJ + Maven</p>");
+        out.println("</body>");
+        out.println("</html>");
+        out.println("</body>");
+        out.println("</html>");
+    }
+}
